@@ -1,0 +1,60 @@
+.book-filter {
+    width: 42%;
+    display: flex;
+    margin-left: 5%;
+    input {
+        margin-top: 5%;
+        padding: 10px;
+        border: 2px solid gray;
+        border-radius: 3px;
+        width: 30vw;
+        font-family: cursive;
+        margin-right: 2%;
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type="number"] {
+        width: 6vw;
+    }
+    .range-filter {
+        display: table-caption;
+        margin: 33px 33vw;
+        label {
+            display: block;
+            margin-bottom: -49px;
+            margin-top: 34px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .book-filter {
+        justify-content: space-between;
+        display: flex;
+        width: 90%;
+        margin: auto;
+        background-color: #b1e8a9;
+        height: 10%;
+        padding-bottom: 5%;
+        border-bottom: 2px solid #2f2f2f;
+        input {
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 3px;
+            width: 26%;
+            height: 5vh;
+            margin: auto;
+            font-family: cursive;
+        }
+        input[type="text"] {
+            margin-right: 23%;
+            margin-left: 0;
+            width: 36vw;
+        }
+        input[type="number"] {
+            width: 15%;
+            margin: 1%;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.popup {
+    font-family: cursive;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    height: 97%;
+    width: 340px;
+    z-index: 1;
+    background-color: #f3f5f7;
+    text-align: center;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+    transition: all 0.5s ease;
+    transform: translateX(100%);
+    box-shadow: 0 12px 24px -6px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(9, 30, 66, 0.08);
+    padding: 2%;
+    text-align: center;
+    &.open {
+        transform: translateX(0);
+    }
+    header {
+        margin-top: 62px;
+        p {
+            margin-bottom: 40px;
+            font-size: 21px;
+        }
+    }
+    main {
+        form {
+            input {
+                height: 32px;
+                border: 2px solid #4d4d4d;
+                border-radius: 1px;
+                padding-left: 3px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .sub-btn {
+                height: 32px;
+                border-radius: 1px;
+                background-color: #008000bd;
+                font-weight: bold;
+                transition: 0.2s;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+            .msgs-list {
+                list-style: none;
+                text-align: initial;
+                height: 48vh;
+                overflow-y: overlay;
+                .msg {
+                    margin: 4px 0;
+                }
+            }
+        }
+    }
+    footer {
+        p {
+            border-top: 1px solid gray;
+            padding: 24px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .popup {
+        width: 310px;
+        main {
+            form {
+                .msgs-list {
+                    margin-left: 6%;
+                    margin-right: 17%;
+                }
+            }
+        }
+    }
+}

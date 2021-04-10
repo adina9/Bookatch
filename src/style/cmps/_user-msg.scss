@@ -1,0 +1,34 @@
+.user-msg {
+    background-color: #4cee73;
+    z-index: 3;
+    position: absolute;
+    margin: 4% 33%;
+    padding: 6px;
+    border-radius: 3px;
+    font-family: cursive;
+    border: 2px solid;
+    .link {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .close-btn {
+        button {
+            float: right;
+            cursor: pointer;
+            transition: 0.1s;
+            border: none;
+            font-weight: bold;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .user-msg {
+        width: 62%;
+        position: fixed;
+        margin: -6% 19%;
+    }
+}

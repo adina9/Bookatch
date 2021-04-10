@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+
+.home {
+    padding-top: 7%;
+    .home-section {
+        display: flex;
+        .home-img {
+            height: 61vh;
+            display: block;
+            /* margin: inherit; */
+            position: fixed;
+            top: 33%;
+            left: 5vw;
+            /* width: 67vh; */
+            opacity: 0.6;
+            /* width: 64%;*/
+        }
+        .home-title {
+            text-align: center;
+            font-size: 8vw;
+            color: #353535;
+            position: fixed;
+            width: 47vw;
+            top: 20%;
+            left: 30%;
+            text-shadow: 3px 0px 3px #00000054;
+            /* margin-bottom: 69px; */
+            /* margin-top: 2%; */
+            /* margin-left: 46%; */
+            display: inline-block;
+            font-family: "Akaya Kanadaka", cursive;
+        }
+
+        .link-btn {
+            margin-top: 6rem;
+            /* margin-top: 20rem; */
+            position: fixed;
+            left: 47%;
+            top: 500px;
+            /* margin-left: 29rem; */
+            padding: 1rem 3rem;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            font-size: x-large;
+            box-shadow: 7px -6px 9px 0px #5d5d5d30;
+            transition: 0.2s;
+            cursor: pointer;
+            border: none;
+            &:hover {
+                background-color: rgb(20, 56, 20);
+                color: white;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .home {
+        padding-top: 0;
+        .home-section {
+            display: block;
+            .home-title {
+                text-align: center;
+                font-size: 16vw;
+                color: #2b2b2b;
+                margin-top: 42%;
+                /* margin: 42% 10% 12% 4%; */
+                text-shadow: 3px 0px 3px #00000054;
+                /* margin: 42% 14% 12%; */
+                position: unset;
+                width: 100%;
+            }
+            .home-img {
+                width: 124%;
+                opacity: 0.2;
+                position: fixed;
+                z-index: -1;
+                top: 35%;
+                right: -22%;
+                left: -2.5%;
+                /* margin: 0 0 2rem 10rem;*/
+            }
+            .link-btn {
+                box-shadow: none;
+                border: none;
+                position: unset;
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.book-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 2em;
+    margin-bottom: 200px;
+    margin: 5%;
+    background-color: aliceblue;
+    margin: 7% 9% 0;
+    margin-top: 170px;
+    padding: 30px;
+    box-shadow: 0 0 15px #00000040;
+    .back-btn {
+        margin: 1rem 0 1rem -0.5rem;
+        font-weight: bold;
+        transition: 0.15s;
+        cursor: pointer;
+        padding-top: 2px;
+        display: flex;
+        height: fit-content;
+        margin-top: -10px;
+        border-radius: 0;
+        padding: 5px;
+        transition: 0.1s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    .img-title {
+        img {
+            margin-top: 23px;
+            width: 276px;
+        }
+        p {
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: bold;
+            text-shadow: 1px -1px 2px #0000001f;
+        }
+    }
+    .info {
+        margin: 0 40px;
+        width: 97%;
+        .book-desc {
+            .show-desc-btn {
+                background-color: #343534;
+                color: white;
+                cursor: pointer;
+                transition: 0.2s;
+                border-radius: 0;
+                padding: 5px;
+                margin-top: 4px;
+                &:hover {
+                    background-color: green;
+                }
+            }
+        }
+        .marg {
+            margin-top: 8px;
+        }
+        .sub-title {
+            border-bottom: 1px solid;
+            small {
+                font-size: 18px;
+                font-family: cursive;
+            }
+        }
+        .more-info {
+            text-align: initial;
+            margin-top: 15px;
+            .sale-div {
+                display: inline-block;
+                margin-top: -23px;
+                img {
+                    left: -73vh;
+                    width: 67px;
+                    position: relative;
+                    top: 54vh;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .book-details {
+        margin-top: 34%;
+        grid-template-columns: unset;
+        .info {
+            display: contents;
+            .more-info {
+                margin-top: 0;
+                .sale-div img {
+                    width: 67px;
+                    display: flex;
+                    top: -32vh;
+                    left: -26%;
+                    position: relative;
+                }
+            }
+            .sub-title {
+                padding: 10px;
+            }
+            .book-desc {
+                .show-desc-btn {
+                    box-shadow: none;
+                    padding: 8px;
+                }
+            }
+        }
+        .img-title img {
+            width: 245px;
+        }
+    }
+}

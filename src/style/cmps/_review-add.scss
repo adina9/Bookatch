@@ -1,0 +1,163 @@
+.review {
+    .btn-add {
+        box-shadow: 0 0 5px black;
+        background-color: #3435349d;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+        border-radius: 0;
+        padding: 5px;
+        margin-top: 4px;
+        &:hover {
+            background-color: green;
+        }
+    }
+    form {
+        margin: 10% auto;
+        font-family: cursive;
+        margin-left: 20%;
+
+        .info {
+            justify-content: space-between;
+            display: grid;
+            margin: inherit;
+            input,
+            .select {
+                height: 32px;
+                padding: 2px 8px;
+                border-radius: 1px;
+                border: 2px solid #0b250b7d;
+                &:focus {
+                    outline-color: initial;
+                }
+            }
+            .more {
+                display: flex;
+                margin-top: 7%;
+            }
+        }
+        .text-area {
+            padding: 7px;
+            font-size: 16px;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            margin-bottom: 15%;
+        }
+        button {
+            width: fit-content;
+            background-color: #343534;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+            border-radius: 0;
+            padding: 5px;
+            margin-top: 4px;
+            &:hover {
+                background-color: green;
+            }
+        }
+    }
+    .reviews-list {
+        list-style: none;
+        height: 45vh;
+        overflow-y: overlay;
+        .review {
+            display: flex;
+            background-color: #8080804d;
+            padding: 7px;
+            justify-content: space-between;
+            width: 90%;
+            margin-bottom: 9px;
+            height: 35px;
+            cursor: pointer;
+            align-items: center;
+            .review-btns {
+                span {
+                    margin-right: 7px;
+                }
+                button {
+                    margin-bottom: 2.5px;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .review-preview {
+        margin-left: 90px;
+        text-align: initial;
+    }
+}
+@media (max-width: 500px) {
+    .review {
+        border-top: 1px solid;
+        padding-top: 30px;
+        .btn-add {
+            margin-top: 6%;
+            padding: 8px;
+            box-shadow: none;
+        }
+        form {
+            margin: -4.5%;
+            .info {
+                margin: 5% 16%;
+                justify-content: space-between;
+                width: 83%;
+                input[type="text"] {
+                    width: 100%;
+                    margin: 6px auto -3px;
+                }
+                .more {
+                    display: flex;
+                    margin: auto;
+                    margin-top: 3%;
+                    justify-content: space-between;
+                }
+            }
+            .text-area {
+                padding: 14px;
+                font-size: 16px;
+                border: 2px solid #4d4d4d;
+            }
+            .save-r-btn {
+                margin-left: 3.5%;
+                box-shadow: none;
+            }
+        }
+        .reviews-list {
+            overflow-y: overlay;
+            align-items: center;
+            display: initial;
+            .review {
+                border: none;
+                width: unset;
+                font-family: cursive;
+                span {
+                    margin-top: -2px;
+                    position: absolute;
+                    right: 103px;
+                }
+                button {
+                    border-radius: 0;
+                    padding-top: 3px;
+                }
+            }
+        }
+        .review-preview {
+            margin-left: 0;
+            .review-back-btn {
+                button {
+                    margin-bottom: 4%;
+                    font-weight: bold;
+                    border: unset;
+                    background: unset;
+                    padding: none;
+                    border: 1px solid;
+                    padding-bottom: 2px;
+                    color: black;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+}

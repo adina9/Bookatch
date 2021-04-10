@@ -1,0 +1,59 @@
+.book-preview {
+    box-shadow: 0 0 19px #0000004d;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: -5px;
+    background-color: #ffffff87;
+    &:hover {
+        background-color: rgba(209, 209, 209, 0.692);
+        color: rgb(40, 110, 43);
+    }
+    .book-img {
+        width: 90%;
+        border-radius: 1px;
+        box-shadow: 0 0 20px #3b3e3c66;
+    }
+    .book-title {
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        font-family: cursive;
+        font-size: 15px;
+        color: #0f5c0f;
+        text-shadow: 2px -2px 6px #9c9c9c99;
+    }
+    .price-div {
+        .book-price {
+            margin-top: 8px;
+            font-size: large;
+            font-family: cursive;
+        }
+        .sale-div {
+            position: absolute;
+            margin-left: -40px;
+            img {
+                width: 94px;
+                margin-top: -64px;
+            }
+        }
+    }
+    .btns {
+        button {
+            border: unset;
+            background: unset;
+            padding: none;
+            outline: none;
+            border: 1px solid black;
+            color: black;
+            border-radius: 5px;
+            border: none;
+            float: left;
+            background-color: #1a1a1ad6;
+            color: white;
+            padding: 2% 3.5%;
+            cursor: pointer;
+            border-radius: 1.5px;
+            box-shadow: 1px 0px 20px 0px #1d5c1b7a;
+        }
+    }
+}

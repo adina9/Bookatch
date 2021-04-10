@@ -1,0 +1,44 @@
+.icon-popup {
+    float: right;
+    width: 56px;
+    cursor: pointer;
+    margin: 96px 18px 18px -66px;
+    -o-object-fit: revert;
+    object-fit: revert;
+    position: fixed;
+    right: -1%;
+    top: -17px;
+    background-color: #a7eaa7e3;
+    width: 100px;
+    padding: 16px;
+    border-radius: 50%;
+}
+.close-popup {
+    background-color: #72c9724a;
+    border-radius: 1.5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: left;
+    transition: 0.1s;
+    &:hover {
+        background-color: rgb(48, 48, 48);
+        color: white;
+    }
+}
+@media (max-width: 500px) {
+    .icon-popup {
+        position: fixed;
+        display: block;
+        top: 10%;
+        margin: 0;
+        right: 2%;
+        padding: 3%;
+        background-color: #a7eaa7e3;
+        float: right;
+        width: 76px;
+        cursor: pointer;
+        object-fit: revert;
+        object-fit: revert;
+        border-radius: 50%;
+    }
+}
